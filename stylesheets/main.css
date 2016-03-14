@@ -9,6 +9,11 @@ body {
   margin: 20px;
 }
 
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
 .card.pair1 {
   background: url('../img/6-diamonds.png') no-repeat;
   background-size: 95%;

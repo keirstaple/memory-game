@@ -15,7 +15,9 @@ exports.Memory = function(){
 var Entry = require('./../js/memory.js').Card;
 
 $(document).ready(function() {
-  $('').click(function() {
-
+  $('.card').each(function() {
+    $(this).click(function() {
+      $(this).children('img').toggle();
+    })
   });
 });
