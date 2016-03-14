@@ -43,9 +43,32 @@ var Entry = require('./../js/memory.js').Card;
 
 $(document).ready(function() {
   $('.card').shuffle();
+  var showing = [];
   $('.card').each(function() {
     $(this).click(function() {
-      $(this).children('img').toggle();
-    })
+      // debugger;
+      $(this).children('img').hide();
+      $(this).addClass('showing');
+      var showingElems = $('.showing').get();
+      showing.push(showingElems);
+
+      for (var i = 0; i < showing.length; i++) {
+        if ($(this).hasClass('pair' + i) && $(this).hasClass('card1') && $(showing[i]).hasClass('pair' + i) && $(showing[i]).hasClass('card2') || $(this).hasClass('pair' + i) && $(this).hasClass('card2') && $(showing[i]).hasClass('pair' + i) && $(showing[i]).hasClass('card1')) {
+          $('.card.pair' + i).children('img').hide();
+        }
+        else {
+          $(this).children('img').show();
+        }
+      }
+    });
+    // $(this).click(function() {
+    //   $(this).children('img').hide();
+    //   $(this).addClass('showing');
+    //   var showingElems = $('.showing').get();
+    //   showing.push(showingElems);
+    // });
+
+
+
   });
 });
