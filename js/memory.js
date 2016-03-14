@@ -11,11 +11,3 @@ exports.Memory = function(){
   this.pair5 = {card1Up : false,
                 card2Up : false};
 };
-
-var Entry = require('./../js/memory.js').Card;
-
-$(document).ready(function() {
-  $('').click(function() {
-
-  });
-});

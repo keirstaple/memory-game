@@ -1,0 +1,40 @@
+body {
+  max-width: 1200px;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  float: left;
+  margin: 20px;
+}
+
+.card.pair1 {
+  background: url('../img/6-diamonds.png') no-repeat;
+  background-size: 95%;
+  background-position: center;
+}
+
+.card.pair2 {
+  background: url('../img/7-clubs.png') no-repeat;
+  background-size: 95%;
+  background-position: center;
+}
+
+.card.pair3 {
+  background: url('../img/ace-spades.png') no-repeat;
+  background-size: 95%;
+  background-position: center;
+}
+
+.card.pair4 {
+  background: url('../img/jack-diamonds.png') no-repeat;
+  background-size: 95%;
+  background-position: center;
+}
+
+.card.pair5 {
+  background: url('../img/queen-hearts.png') no-repeat;
+  background-size: 95%;
+  background-position: center;
+}

@@ -1,25 +1,7 @@
-var Entry = require('./../js/journal.js').Entry;
+var Entry = require('./../js/memory.js').Card;
 
 $(document).ready(function() {
-  $('.journal-entry').submit(function(event){
-    event.preventDefault();
-    var heading = $('#heading').val();
-    var body = $('#body').val();
-    var newEntry = new Entry(heading, body);
+  $('').click(function() {
 
-    newEntry.getWordCount();
-
-    $('.postGroup').append(
-      '<div class="finalPost">' +
-    			'<span class="headingPost"></span><br>' +
-    			'<span class="entryPost"></span><br>' +
-    			'<span class="wordCount"></span><br>' +
-    			'<span class="createdAt"></span>' +
-    		'</div>'
-      );
-    $('.headingPost').last().append(newEntry.heading);
-    $('.entryPost').last().append(newEntry.body);
-    $('.wordCount').last().append(newEntry.wordCount);
-    $('.createdAt').last().append(newEntry.createdAt);
   });
 });
