@@ -12,7 +12,7 @@ describe("Journal", function() {
 });
 
 describe("Entry", function() {
-	it('should creat a journal entry object', function() {
+	it('should create a journal entry object', function() {
 		var testEntry = new Entry('test heading', 'test body');
 		expect(testEntry.heading).to.equal('test heading');
 		expect(testEntry.body).to.equal('test body');
